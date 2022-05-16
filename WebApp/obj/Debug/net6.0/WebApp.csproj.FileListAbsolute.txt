@@ -65,3 +65,7 @@ C:\Users\karol\source\repos\WebApp\WebApp\bin\Debug\net6.0\Swashbuckle.AspNetCor
 C:\Users\karol\source\repos\WebApp\WebApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\karol\source\repos\WebApp\WebApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\karol\source\repos\WebApp\WebApp\obj\Debug\net6.0\WebApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\karol\source\repos\WebApp\WebApp\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\karol\source\repos\WebApp\WebApp\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\karol\source\repos\WebApp\WebApp\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\karol\source\repos\WebApp\WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

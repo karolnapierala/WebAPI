@@ -367,3 +367,440 @@ FROM [Restaurants] AS [r]
 INNER JOIN [Addresses] AS [a] ON [r].[AddressId] = [a].[Id]
 LEFT JOIN [Dishes] AS [d] ON [r].[Id] = [d].[RestaurantId]
 ORDER BY [r].[Id], [a].[Id]
+2022-05-16 08:24:13.8930|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 08:24:14.0184|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 08:24:14.0345|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 08:24:14.0345|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 08:24:14.0517|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 08:34:43.0642|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 08:34:43.1866|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 08:34:43.2075|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 08:34:43.2303|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 08:34:43.2414|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 08:35:15.6644|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 08:35:15.8382|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 08:35:19.8279|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (306ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[Id], [r].[AddressId], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Descripton], [r].[HasDelivery], [r].[Name], [a].[Id], [a].[City], [a].[PostalCode], [a].[Street], [d].[Id], [d].[Description], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM [Restaurants] AS [r]
+INNER JOIN [Addresses] AS [a] ON [r].[AddressId] = [a].[Id]
+LEFT JOIN [Dishes] AS [d] ON [r].[Id] = [d].[RestaurantId]
+ORDER BY [r].[Id], [a].[Id]
+2022-05-16 08:35:19.9977|INFO|WebApp.Middleware.RequestTimeMiddleware|Request [GET] at /api/restaurant took 5799 ms
+2022-05-16 08:35:35.6280|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|Unable to resolve service for type 'WebApp.IDishService' while attempting to activate 'WebApp.Controllers.DishController'.
+2022-05-16 08:37:48.0245|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 08:37:48.0943|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 08:37:48.1150|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 08:37:48.1150|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 08:37:48.1266|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 08:38:00.9067|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|Unable to resolve service for type 'WebApp.IDishService' while attempting to activate 'WebApp.Controllers.DishController'.
+2022-05-16 08:41:29.3682|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 08:41:29.4657|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 08:41:29.4919|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 08:41:29.4919|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 08:41:29.5045|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 08:41:43.7992|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|Unable to resolve service for type 'WebApp.IDishService' while attempting to activate 'WebApp.Controllers.DishController'.
+2022-05-16 08:43:28.3800|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 08:43:28.4420|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 08:43:28.4420|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 08:43:28.4550|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 08:43:28.4550|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 08:43:41.9977|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 08:43:42.1680|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 08:43:45.5668|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (170ms) [Parameters=[@__restaurantId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[AddressId], [t].[Category], [t].[ContactEmail], [t].[ContactNumber], [t].[Descripton], [t].[HasDelivery], [t].[Name], [d].[Id], [d].[Description], [d].[Name], [d].[Price], [d].[RestaurantId]
+FROM (
+    SELECT TOP(1) [r].[Id], [r].[AddressId], [r].[Category], [r].[ContactEmail], [r].[ContactNumber], [r].[Descripton], [r].[HasDelivery], [r].[Name]
+    FROM [Restaurants] AS [r]
+    WHERE [r].[Id] = @__restaurantId_0
+) AS [t]
+LEFT JOIN [Dishes] AS [d] ON [t].[Id] = [d].[RestaurantId]
+ORDER BY [t].[Id]
+2022-05-16 08:57:43.4519|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 08:57:43.7366|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 08:57:43.7744|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 08:59:47.6123|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 08:59:47.8167|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 08:59:49.8506|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-16 08:59:49.9040|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (38ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-16 08:59:49.9085|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-16 08:59:49.9085|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-16 08:59:49.9353|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-16 08:59:49.9613|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20220516065743_UserAndRole'.
+2022-05-16 08:59:50.3812|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (328ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Roles] (
+    [Id] int NOT NULL IDENTITY,
+    [Name] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Roles] PRIMARY KEY ([Id])
+);
+2022-05-16 08:59:50.4285|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [Email] nvarchar(max) NOT NULL,
+    [FirstName] nvarchar(max) NOT NULL,
+    [LastName] int NOT NULL,
+    [DateOfBirth] datetime2 NULL,
+    [Nationality] nvarchar(max) NOT NULL,
+    [PasswordHash] nvarchar(max) NOT NULL,
+    [RoleId] int NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_Users_Roles_RoleId] FOREIGN KEY ([RoleId]) REFERENCES [Roles] ([Id]) ON DELETE CASCADE
+);
+2022-05-16 08:59:50.4617|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (32ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Users_RoleId] ON [Users] ([RoleId]);
+2022-05-16 08:59:50.4617|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220516065743_UserAndRole', N'6.0.5');
+2022-05-16 09:08:45.6668|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 09:08:45.7155|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 09:08:45.7229|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 09:08:45.7229|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 09:08:45.7229|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 09:09:26.6298|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 09:09:26.8641|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 09:09:29.7364|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-16 09:09:30.1985|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (89ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Roles] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-05-16 09:09:30.6899|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (269ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Roles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-16 09:09:30.7230|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Roles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-16 09:09:30.7230|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Roles] ([Name])
+VALUES (@p0);
+SELECT [Id]
+FROM [Roles]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-16 09:09:30.7907|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Restaurants] AS [r]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-05-16 09:09:30.9818|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 09:09:30.9818|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 09:09:30.9882|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 09:09:30.9882|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 09:09:30.9882|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 09:42:08.0975|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 09:42:08.8417|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 09:42:08.8500|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 09:42:08.8500|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 09:42:08.8649|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 09:45:22.2348|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 09:45:22.4399|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 09:45:25.2013|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (1,895ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([DateOfBirth], [Email], [FirstName], [LastName], [Nationality], [PasswordHash], [RoleId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-16 09:45:25.3573|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'WebApp.Entities.RestaurantDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'FirstName', table 'RestaurantDb.dbo.Users'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:b453d434-297b-4d2d-9394-3ca912049a91
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-05-16 09:47:45.1117|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 09:47:45.3042|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 09:47:45.3330|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 09:47:52.5442|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 09:47:52.7365|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 09:47:53.0065|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-16 09:47:54.6393|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,619ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-16 09:47:54.6437|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-16 09:47:54.6437|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-16 09:47:54.6625|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-16 09:47:54.6808|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20220516074745_migration2'.
+2022-05-16 09:47:55.0076|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (273ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'PasswordHash');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [Users] ALTER COLUMN [PasswordHash] nvarchar(max) NULL;
+2022-05-16 09:47:55.0286|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var1 sysname;
+SELECT @var1 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'Nationality');
+IF @var1 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var1 + '];');
+ALTER TABLE [Users] ALTER COLUMN [Nationality] nvarchar(max) NULL;
+2022-05-16 09:47:55.0427|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var2 sysname;
+SELECT @var2 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'LastName');
+IF @var2 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var2 + '];');
+ALTER TABLE [Users] ALTER COLUMN [LastName] int NULL;
+2022-05-16 09:47:55.0576|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (14ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+DECLARE @var3 sysname;
+SELECT @var3 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[Users]') AND [c].[name] = N'FirstName');
+IF @var3 IS NOT NULL EXEC(N'ALTER TABLE [Users] DROP CONSTRAINT [' + @var3 + '];');
+ALTER TABLE [Users] ALTER COLUMN [FirstName] nvarchar(max) NULL;
+2022-05-16 09:47:55.4153|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220516074745_migration2', N'6.0.5');
+2022-05-16 09:48:04.7274|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 09:48:04.7980|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 09:48:04.7980|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 09:48:04.8111|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 09:48:04.8111|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 09:48:17.3814|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 09:48:17.5575|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 09:48:18.1740|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (49ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([DateOfBirth], [Email], [FirstName], [LastName], [Nationality], [PasswordHash], [RoleId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-16 09:57:15.2991|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 09:57:15.3602|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 09:57:15.3602|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 09:57:15.3602|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 09:57:15.3602|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 09:57:28.5815|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 09:57:28.7777|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 09:57:29.5828|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (215ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([DateOfBirth], [Email], [FirstName], [LastName], [Nationality], [PasswordHash], [RoleId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-16 10:19:55.1254|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 10:19:55.2891|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 10:19:55.3044|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 10:19:55.3044|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 10:19:55.3159|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 10:20:21.2763|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 10:20:21.5010|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 10:20:24.0857|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,680ms) [Parameters=[@__value_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__value_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-05-16 10:20:47.9012|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 10:20:47.9316|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__value_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__value_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-05-16 10:20:48.1495|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([DateOfBirth], [Email], [FirstName], [LastName], [Nationality], [PasswordHash], [RoleId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-16 10:21:29.9965|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 10:21:30.0107|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CAST(0 AS bit)
+2022-05-16 10:21:51.9539|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 10:21:51.9539|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__value_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__value_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-05-16 12:06:00.2279|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 12:06:00.3114|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 12:06:00.3114|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 12:06:00.3114|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 12:06:00.3114|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 12:06:49.4616|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 12:06:49.6564|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:06:50.7036|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (50ms) [Parameters=[@__value_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__value_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-05-16 12:06:51.1525|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (132ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([DateOfBirth], [Email], [FirstName], [LastName], [Nationality], [PasswordHash], [RoleId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-05-16 12:07:40.3886|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:07:40.6267|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (106ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:08:15.7845|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:08:15.8051|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:08:21.9624|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+2022-05-16 12:08:32.9539|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:08:32.9539|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:09:24.4865|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 12:09:24.5181|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 12:09:24.5181|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 12:09:24.5181|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 12:09:24.5181|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 12:09:37.5120|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 12:09:37.6534|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:09:38.2065|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (39ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:09:42.2719|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:09:42.2719|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:09:42.4021|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+2022-05-16 12:09:44.1194|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:09:44.1194|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:09:44.1338|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+2022-05-16 12:09:44.8490|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:09:44.8490|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:09:44.8605|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+2022-05-16 12:09:45.4122|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:09:45.4122|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:09:45.4287|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+2022-05-16 12:10:28.8349|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 12:10:29.2474|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 12:10:29.2941|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 12:10:29.3086|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 12:10:29.3147|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 12:10:35.6565|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 12:10:35.8292|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:10:36.5971|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (44ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:12:57.9114|ERROR|WebApp.Middleware.ErrorHandlingMiddleware|IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+2022-05-16 12:13:15.6319|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 12:13:15.6800|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 12:13:15.6916|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 12:13:15.6916|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 12:13:15.6916|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 12:13:18.5752|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 12:13:18.8663|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:13:19.8172|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (69ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:14:42.6333|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:14:49.0019|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6,337ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:17:25.2762|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 12:17:25.3230|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 12:17:25.3301|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 12:17:25.3301|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 12:17:25.3301|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 12:17:33.1247|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-16 12:17:33.3012|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-16 12:17:34.1942|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (66ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[DateOfBirth], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Nationality], [u].[PasswordHash], [u].[RoleId], [r].[Id], [r].[Name]
+FROM [Users] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[Email] = @__dto_Email_0
+2022-05-16 12:20:27.7480|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 12:20:27.8676|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 12:20:27.8865|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 12:20:27.8912|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 12:20:27.8912|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
