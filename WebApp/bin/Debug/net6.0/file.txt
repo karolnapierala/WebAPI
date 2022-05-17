@@ -804,3 +804,75 @@ WHERE [u].[Email] = @__dto_Email_0
 2022-05-16 12:20:27.8865|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2022-05-16 12:20:27.8912|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2022-05-16 12:20:27.8912|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 13:04:23.0621|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 13:04:23.1065|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 13:04:23.1151|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 13:04:23.1151|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 13:04:23.1151|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-16 13:54:33.3162|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7136
+2022-05-16 13:54:33.3487|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5136
+2022-05-16 13:54:33.3487|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-05-16 13:54:33.3487|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-05-16 13:54:33.3487|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\karol\source\repos\WebApp\WebApp\
+2022-05-17 09:12:27.7897|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-17 09:12:28.0710|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-17 09:12:28.1120|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-17 09:13:30.3433|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-17 09:13:30.5617|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-17 09:13:31.0677|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-17 09:13:31.1052|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-17 09:13:31.1109|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-17 09:13:31.1109|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-17 09:13:31.1398|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-17 09:13:31.1645|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20220517071228_RestaurantUserIdAdd'.
+2022-05-17 09:13:31.4137|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (165ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Restaurants] ADD [CreatedById] int NOT NULL DEFAULT 0;
+2022-05-17 09:13:31.7009|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (286ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Restaurants_CreatedById] ON [Restaurants] ([CreatedById]);
+2022-05-17 09:13:31.9525|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (249ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Restaurants] ADD CONSTRAINT [FK_Restaurants_Users_CreatedById] FOREIGN KEY ([CreatedById]) REFERENCES [Users] ([Id]) ON DELETE CASCADE;
+2022-05-17 09:14:33.8611|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-17 09:14:34.1658|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-17 09:14:34.2024|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-17 09:14:34.7237|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-17 09:14:34.7586|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-17 09:14:34.7807|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-17 09:15:21.7135|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-17 09:15:21.9365|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-17 09:15:21.9673|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-17 09:15:34.9538|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Dish'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2022-05-17 09:15:35.2654|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.5 initialized 'RestaurantDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.5' with options: None
+2022-05-17 09:15:35.7246|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-17 09:15:35.7802|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-17 09:15:35.7802|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-05-17 09:15:35.7802|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-05-17 09:15:35.8261|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-05-17 09:15:35.8511|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20220517071522_RestaurantCreatedByIdAdd'.
+2022-05-17 09:15:35.9652|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Restaurants] ADD [CreatedById] int NULL;
+2022-05-17 09:15:37.6188|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,652ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX [IX_Restaurants_CreatedById] ON [Restaurants] ([CreatedById]);
+2022-05-17 09:15:37.6272|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [Restaurants] ADD CONSTRAINT [FK_Restaurants_Users_CreatedById] FOREIGN KEY ([CreatedById]) REFERENCES [Users] ([Id]);
+2022-05-17 09:15:37.6272|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220517071522_RestaurantCreatedByIdAdd', N'6.0.5');
